@@ -1,0 +1,113 @@
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-y: 0;
+    overflow-x: 0;
+}
+
+body {
+    background-color: #d9e2e5;
+    color: #333;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadeIn 1.9s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+  }
+  .rohit{
+    width: 90vh;
+    border: 1px solid rgb(7, 119, 145);
+  
+
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #000000;
+      animation: slideIn 1.5s ease; 
+      background-color: white;
+      padding-left: 14rem;
+      padding-right: 10px;
+     
+  }
+  h1:hover{
+    color: white;
+    background-color: black;
+    padding-left: 14rem;
+      padding-right: 10px;
+  }
+  
+  @keyframes slideIn {
+      from {
+          transform: translateY(-25px);
+          opacity: 0;
+      }
+      to {
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+  select {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background-color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: border-color 0.3s, transform 0.2s; 
+  }
+  
+  select:hover {
+      border-color: rgb(212, 0, 131);
+      transform: scale(1.09);
+  }
+  
+  select:focus {
+      outline: none;
+      border-color: #0056b3;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .chart-container {
+      width: 70%; 
+      max-width: 800px; 
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0; 
+      transform: translateY(20px); 
+      animation: fadeInUp 0.5s ease forwards; 
+  }
+  
+  @keyframes fadeInUp {
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  .line-chart {
+      position: relative;
+      margin-top: 20px;
+  }
+  
